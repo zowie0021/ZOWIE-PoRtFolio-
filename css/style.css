@@ -1714,8 +1714,8 @@ section.--gradient {
 }
 
 .c-artist-card-2 {
-  max-width: 45rem;
   width: 100%;
+  max-width: 45rem;
 }
 .c-artist-card-2.--lg {
   max-width: 56rem;
