@@ -1,0 +1,1 @@
+const lenis=new Lenis({autoRaf:!0});lenis.on("scroll",(n=>{console.log(n)}));
