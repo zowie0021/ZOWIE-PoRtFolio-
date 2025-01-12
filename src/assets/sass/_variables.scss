@@ -156,7 +156,7 @@ $spacing-prefixes: (
   --color-black-80: rgba(var(--color-black-rgb), 0.8);
   --color-black-60: rgba(var(--color-black-rgb), 0.6);
   --color-black-30: rgba(var(--color-black-rgb), 0.3);
-  --color-black-10: rgba(var(--color-black-rgb), 0.1);
+
 
   --color-gray: #3F3F3F;
   --color-gray-80: rgba(var(--color-gray-mid-rgb), 0.8);
@@ -169,6 +169,10 @@ $spacing-prefixes: (
   --color-white-rgb: 255, 255, 255;
   --color-white-40: rgba(var(--color-white-rgb), 0.4);--font-primary: 'Noto Sans TC', sans-serif;
   --font-en: 'Roboto', 'Arial', sans-serif;
+
+  --color-skeleton: var(--color-black-30);
+  --color-background-skeleton: var(--color-black-60);
+
 
   --text-4xl: 6.4rem;
   --text-3xl: 3.6rem;

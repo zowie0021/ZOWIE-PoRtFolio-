@@ -17,6 +17,6 @@ mixin ArtistCard(options)
   article.c-artist-card-2(class=classes.join(' '))
     a.c-artist-card-2__wrap(href=props.link)
       h3.u-text-xl.u-fw-900 #{props.name}
-      .c-artist-card-2__img-mask
-        img(src=props.img, alt=props.name)
+      .c-artist-card-2__img-mask.js-lazy
+        img(data-src=props.img, alt=props.name)
         

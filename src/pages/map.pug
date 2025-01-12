@@ -8,14 +8,27 @@ html(lang="en")
       pageTitle = '地圖導覽';
       infoTitle = '地圖導覽後面的資訊標題';
       //- description = '地圖導覽的網頁描述';
-      //- ogImage = 'img/og/og-map.jpg';
+      //- ogImage = '/img/og/og-map.jpg';
     include ../u_layouts/_Head.pug
   body
     include ../u_layouts/_Header.pug
 
-    main
+    main.l-main
+      .l-hero-inner(data-aos="fade-down")
+        h2.u-text-3xl MAP
+        
       section.l-map
-        h2 MAP
+        .container
+          .l-map__map-wrap
+            iframe.l-map__map(
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.9840395453125!2d120.28074907580707!3d22.61707117946005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047620e1c45b%3A0xe6d6d1bd1c764df2!2z6aeB5LqM6Jed6KGT54m55Y2A!5e0!3m2!1szh-TW!2stw!4v1736668001791!5m2!1szh-TW!2stw"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            )
+
+            
 
     include ../u_layouts/_Footer.pug
     include ../u_layouts/_Scripts.pug

@@ -52,18 +52,62 @@ header.l-header
 
     .l-header_logo-mask(href=basePath)
       img(src="img/logo/zowie-logo_1x.png", alt="zowie logo")
+      
+        //- .l-hero__bg-mask
+          //-   img.u-object-fit(src="img/banner/banner-img01.jpg", alt="大港開唱 hero 圖片")
+          //-     h1.l-hero__slogan 這是 HERO 文字
 
-    //- .l-hero__bg-mask
-    //-   img.u-object-fit(src="img/banner/banner-img01.jpg", alt="大港開唱 hero 圖片")
-    //-     h1.l-hero__slogan 這是 HERO 文字
+      //- burger 於 頁面 1400px 內 出現，並  data-lenis-prevent 使burger出現時 背景無法scroll
+  button.o-burger.l-header__burger(onclick="toggleNav()")
+    .o-burger__wrap
+      .o-burger__line
+      .o-burger__line
+      .o-burger__line
+
+  nav.c-nav(data-lenis-prevent)
+    .c-nav__menu
+      ul.c-nav__btn-box
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href=`${basePath}/#lineup`)
+            //- //- span.c-nav__text-en LINEUP
+            //- span.u-ff-en.u-text-lg LINEUP
+            span 演出陣容
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href=`${basePath}/news`)
+            //- //- span.c-nav__text-en NEWS
+            //- span.u-ff-en.u-text-lg NEWS
+            span 最新消息
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href=`${basePath}/#about`)
+            //- //- span.c-nav__text-en ABOUT
+            //- span.u-ff-en.u-text-lg ABOUT
+            span 關於大港
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href="##")
+            //- //- span.c-nav__text-en TIMETABLE
+            //- span.u-ff-en.u-text-lg TIMETABLE
+            span 節目表
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href="##")
+            //- span.c-nav__text-en TICKET
+            span.u-ff-en.u-text-lg TICKET
+            span 購票資訊
+        li.c-nav__btn-wrap
+          a.c-nav__btn(href=`${basePath}/map.html`)
+            //- span.c-nav__text-en MAP
+            span.u-ff-en.u-text-lg MAP
+            span 地圖導覽----------------------------------------------------------------------
     
-    //- ul.c-nav__btn-box.--icon
-    //-   li.c-nav__btn-wrap
-    //-     a.c-nav__btn(href="##")
-    //-       iconify-icon.u-icon.--md(icon="mingcute:facebook-fill")
-    //-   li.c-nav__btn-wrap
-    //-     a.c-nav__btn(href="##")
-    //-       iconify-icon.u-icon.--md(icon="mingcute:ins-fill")
-    //-   li.c-nav__btn-wrap
-    //-     a.c-nav__btn(href="##")
-    //-       iconify-icon.u-icon.--md(icon="mingcute:youtube-fill")   
+        ul.c-nav__btn-box.--icon
+          li.c-nav__btn-wrap
+            a.c-nav__btn(href="##")
+              iconify-icon.u-icon.--md(icon="mingcute:facebook-fill")
+          li.c-nav__btn-wrap
+            a.c-nav__btn(href="##")
+              iconify-icon.u-icon.--md(icon="mingcute:ins-fill")
+          li.c-nav__btn-wrap
+            a.c-nav__btn(href="##")
+              iconify-icon.u-icon.--md(icon="mingcute:youtube-fill")   
+    
+    
+  
